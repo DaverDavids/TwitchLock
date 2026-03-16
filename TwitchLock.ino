@@ -293,8 +293,8 @@ bool connectWifi() {
   String psk  = savedPSK.length()  > 0 ? savedPSK  : MYPSK;
 
   WiFi.mode(WIFI_STA);
-  WiFi.setTxPower(WIFI_POWER_15dBm);
   WiFi.begin(ssid.c_str(), psk.c_str());
+  WiFi.setTxPower(WIFI_POWER_11dBm);
   DBG("[WIFI] Connecting to %s\n", ssid.c_str());
 
   unsigned long t = millis();
