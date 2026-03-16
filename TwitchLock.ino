@@ -16,14 +16,15 @@
 #include <ArduinoOTA.h>
 #include <WebServer.h>
 #include <DNSServer.h>
-#include "Secrets.h"
 #include "html.h"
+#include <Secrets.h>
 
 // ── GPIO ──────────────────────────────────────────────────────────────────────
 #define TRIGGER_PIN      3
 #define TRIGGER_MS    5000
 
 // ── Twitch IRC ────────────────────────────────────────────────────────────────
+#define HOSTNAME  "twitchlock"
 #define TWITCH_HOST  "irc.chat.twitch.tv"
 #define TWITCH_PORT  6667
 
