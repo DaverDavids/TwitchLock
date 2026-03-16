@@ -10,8 +10,6 @@ String buildHTML(
   const String &whitelist,
   const String &blacklist
 ) {
-  String ck = [](bool b){ return b ? " checked" : ""; };
-  // Lambda workaround for older compilers:
   auto chk = [](bool b) -> String { return b ? " checked" : ""; };
 
   String html = R"rawhtml(
