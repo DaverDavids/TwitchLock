@@ -4,9 +4,9 @@
  *
  * Feature toggles (set to 0 to disable):
  */
-#define ENABLE_OTA       1
-#define ENABLE_WEBUI     1
-#define ENABLE_DEBUG     1
+#define ENABLE_OTA       0
+#define ENABLE_WEBUI     0
+#define ENABLE_DEBUG     0
 
 #include <Arduino.h>
 #include <WiFi.h>
