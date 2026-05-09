@@ -18,7 +18,7 @@ String buildHTML(
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TwitchLock Config</title>
+<title>CandyLock Config</title>
 <style>
   body{font-family:sans-serif;background:#0e0e10;color:#efeff1;max-width:520px;margin:30px auto;padding:0 16px}
   h1{color:#9147ff;margin-bottom:4px}h2{color:#bf94ff;font-size:1em;margin:20px 0 6px}
@@ -36,7 +36,7 @@ String buildHTML(
 </style>
 </head>
 <body>
-<h1>&#x1F512; TwitchLock</h1>
+<h1>&#x1F512; CandyLock</h1>
 <form method="POST" action="/save">
 
   <h2>Twitch Channel</h2>
