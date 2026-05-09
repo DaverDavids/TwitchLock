@@ -1,5 +1,5 @@
 /*
- * TwitchLock - ESP32-C3 Twitch Chat GPIO Trigger
+ * CandyLock - ESP32-C3 Twitch Chat GPIO Trigger
  * Watches a Twitch channel IRC and triggers GPIO3 HIGH for 5s on match.
  *
  * Feature toggles (set to 0 to disable):
@@ -24,7 +24,7 @@
 #define TRIGGER_MS    5000
 
 // ── Twitch IRC ────────────────────────────────────────────────────────────────
-#define HOSTNAME  "twitchlock"
+#define HOSTNAME  "candylock"
 #define TWITCH_HOST  "irc.chat.twitch.tv"
 #define TWITCH_PORT  6667
 
@@ -52,7 +52,7 @@ unsigned long triggerEnd = 0;
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 void loadPrefs() {
-  prefs.begin("twitchlock", false);
+  prefs.begin("candylock", false);
   channel          = prefs.getString("channel",     "");
   oauthToken       = prefs.getString("oauth",       "");
   botName          = prefs.getString("botname",     "justinfan12345");
@@ -69,7 +69,7 @@ void loadPrefs() {
 }
 
 void savePrefs() {
-  prefs.begin("twitchlock", false);
+  prefs.begin("candylock", false);
   prefs.putString("channel",  channel);
   prefs.putString("oauth",    oauthToken);
   prefs.putString("botname",  botName);
@@ -314,7 +314,7 @@ void setup() {
 #if ENABLE_DEBUG
   Serial.begin(115200);
   delay(500);
-  DBG("[BOOT] TwitchLock starting\n");
+  DBG("[BOOT] CandyLock starting\n");
 #endif
 
   pinMode(TRIGGER_PIN, OUTPUT);
