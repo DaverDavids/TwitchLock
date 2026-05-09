@@ -25,7 +25,7 @@ ESP32-C3 sketch that monitors a Twitch channel's IRC chat and pulls **GPIO 3 HIG
 ## Setup
 1. Copy `Secrets.h` (excluded from git), fill in your WiFi credentials and hostname.
 2. Flash to your ESP32-C3.
-3. Open `http://twitchlock.local` (or the IP shown on Serial) to configure the Twitch channel and trigger rules.
+3. Open `http://candylock.local` (or the IP shown on Serial) to configure the Twitch channel and trigger rules.
 
 ## Anonymous vs Authenticated
 Leave **Bot username** and **oauth** blank to join Twitch IRC anonymously — this is enough to read chat.
