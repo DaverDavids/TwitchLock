@@ -1,3 +1,5 @@
+DISCLAIMER: This code was made with with the help of AI/LLMs.
+
 # TwitchLock
 
 ESP32-C3 sketch that monitors a Twitch channel's IRC chat and pulls **GPIO 3 HIGH for 5 seconds** when a qualifying message is received.
